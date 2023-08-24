@@ -1,0 +1,135 @@
+body{
+    background: linear-gradient(270deg, #8EC5FC 19%, #E0C3FC 63%);
+    
+}
+
+nav{
+    background-image: linear-gradient(270deg, #8EC5FC 19%, #E0C3FC 63%);
+}
+
+button {
+    border-radius: 20px;
+    border: 0px;
+    background-color: transparent;
+    margin: 3px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 227, 232);
+    padding: 6px 15px 6px 15px;
+}
+
+button:hover {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+a {
+    font-family: cursive;
+    text-decoration: none;
+    color: black;
+}
+
+i:hover{
+    cursor: pointer;    
+}
+
+a:hover {
+    font-weight: 500;
+    color: rgb(11, 157, 45);
+}
+
+.loginPop {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 10px;
+    top: 60px;
+    right: 80px;
+    height: 200px;
+    width: 210px;
+    border-radius: 15px;
+    background-color: rgb(215, 248, 255);
+    align-items: end;
+}
+
+input {
+    border-width: 0 0 2px 0;
+    border-color: red;
+    background-color: transparent;
+}
+
+.content {
+    margin: 15px 0px 15px 0px;
+    border-radius: 20px;
+    background-color: rgb(217, 242, 234);
+    padding: 30px 0px 30px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+img{
+        width: 350px;
+        cursor: pointer;
+}
+
+.floating{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    top: 70px;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #fdfceb 100%);
+    font-family: cursive;
+    font-size: larger;
+    border-radius: 0px 8px 20px 0px;
+    height: 68vh;
+    background-color: #dfe4ef;
+    width: 7vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+.profileImage{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.main{
+    z-index: -3;
+    padding-top: 60px;
+}
+
+.toolTip{   
+    display: none;
+    font-size: small;
+    position: relative;
+    width: 70px;
+    top: -10px;
+    right: -60px;
+    padding: 4px  ;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.profile1,.profile2,.profile3,.profile4,.profile5,.profile6{
+    position: relative;
+    left: 10px;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+}
+
+
+.profile1:hover .toolTip,.profile2:hover .toolTip,.profile3:hover .toolTip,.profile4:hover .toolTip,.profile5:hover .toolTip,.profile6:hover .toolTip{
+    display: block;
+    cursor: pointer;
+    font-size: small;
+}
+
+.statusFix{
+    position: absolute;
+    top: 0px
+}
+footer{
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
+}

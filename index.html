@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ce8eae572.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <nav class="container-fluid position-fixed " style="height: 60px; z-index: 1;">
+        <div class="row d-flex align-items-center justify-content-center" style="height: 100%;">
+            <div class="col-2 text-center d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                <i class="fa-solid fa-fish"></i>
+            </div>
+            
+            <div class="col-12 col-lg-7 col-xl-7 col-xxl-7 col-md-7">
+                <div class="row d-none center d-xxl-flex d-xl-flex d-lg-flex d-xxl-block d-xl-block d-lg-block ">
+                    <div class="col "><a href="">Home</a></div>
+                    <div class="col"><a href="">Search</a></div>
+                    <div class="col"><a href="">Explore</a></div>
+                    <div class="col"><a href="">Reels</a></div>
+                    <div class="col"><a href="">Messages</a></div>
+                </div>
+                <div class="row-2 d-flex d-sm-flex  d-block d-lg-none d-xl-none d-l-none ">
+                    <div class="col text-center"><i class="fa-solid fa-message"></i></div>
+                    <div class="col text-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="col text-center"><i class="fa-solid fa-compass"></i></div>
+
+                </div>
+            </div>
+            <div class="col-3 text-center d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                <button id="login">Login</button>
+                <button id="signUp">sign up</button>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile -->
+    <div class="container-fluid p-2 d-block d-lg-none d-xl-none " style="position: relative;top: 50px;">
+        <div class="profile  d-flex flex-row align-items-center justify-content-center h-100">
+            <span style="color: rgb(0, 0, 0); font-family: Arial; font-weight: 600;">Status</span>
+            <img src="./tree2.jpg" alt="" class="profileImage p-1">
+            <img src="./tree.jpg" alt="" class="profileImage p-1">
+            <img src="./flower.jpg" alt="" class="profileImage p-1">
+            <img src="./tree2.jpg" alt="" class="profileImage p-1">
+            <img src="./tree.jpg" alt="" class="profileImage p-1">
+            <img src="./flower.jpg" alt="" class="profileImage p-1">
+
+        </div>
+    </div>
+    <!-- big devices -->
+
+    <!-- floating left start -->
+    <div class="floating position-fixed d-none d-lg-block d-xl-block">
+        <div class="profile d-flex flex-column align-items-center justify-content-evenly h-100">
+            <span style="color: rgb(0, 0, 0); font-family: Arial; font-weight: 600;" class="statusFix">Status</span>
+            <div class="profile1">
+               <img src="./tree2.jpg" alt="" class="profileImage">
+               <div class="toolTip" >parofile 1</div>
+            </div>
+            <div class="profile2">
+                 <img src="./tree.jpg" alt="" class="profileImage">
+                 <div class="toolTip" >parofile 2</div>
+            </div>
+            <div class="profile3"> 
+                <img src="./flower.jpg" alt="" class="profileImage">
+                <div class="toolTip" >parofile 3</div>
+            </div>
+            <div class="profile4">
+                <img src="./tree2.jpg" alt="" class="profileImage">
+                <div class="toolTip" >parofile 4</div>
+            </div>
+            <div class="profile5"> 
+                <img src="./tree.jpg" alt="" class="profileImage">
+                <div class="toolTip" >parofile 5</div>
+            </div>
+            <div class="profile6"> 
+                <img src="./flower.jpg" alt="" class="profileImage">
+                <div class="toolTip" >parofile 6</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login popUp -->
+    <div class="loginPop shadow position-fixed" id="loginPop">
+        <i class="fa-solid fa-xmark" id="#close"></i>
+        <input type="text" name="email" id="email" placeholder="email id">
+        <input type="password" name="Password" id="Password" placeholder="Password">
+        <button type="button" class="btn btn-primary">login</button>
+
+    </div>
+
+    <div class="loginPop shadow position-fixed" id="signUpModal">
+        <i class="fa-solid fa-xmark" id="#close2"></i>
+        <input type="text" name="name" id="name" placeholder="Enter Your name">
+        <input type="number" name="number" id="number" placeholder="Enter your phone number">
+        <input type="text" name="email" id="email" placeholder="email id">
+        <input type="password" name="Password" id="Password" placeholder="Password">
+        <button type="button" class="btn btn-primary">Sign up</button>
+
+    </div>
+    <!-- PopUP end -->
+
+    <!-- carasoul start -->
+    <div class="container-md d-block  pt-5 d-lg-none d-xl-none">
+        <div id="carousel" class="carousel slide pt-4 " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./flower.jpg" class="d-block w-100" alt="..." height="300px">
+                </div>
+                <div class="carousel-item">
+                    <img src="./tree.jpg" class="d-block w-100" alt="..." height="300px">
+                </div>
+                <div class="carousel-item">
+                    <img src="./tree2.jpg" class="d-block w-100" alt="..." height="300px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- carasoul end -->
+    <!-- main contetent -->
+     <div class="container pt-1 ms-lg-5 pt-lg-5 pt-xl-5" >
+        <div class="row gx-3 mx-lg-5 ">
+            <div class="col d-flex justify-content-center">
+                <div class="content d-flex flex-column text-center align-items-center" style="width: 400px;">
+                    <div class="contentProfile">
+                        <img src="./tree2.jpg" alt="" style="height: 17px; width: 17px; border-radius: 50%;">
+                        <a href="">Profile name</a>
+                    </div>
+                    <img src="./tree2.jpg" alt="" style="height: 300px;">
+                    <p>This is a landscape image</p>
+                    <div class="d-flex justify-content-around " style="height: 20px; width: 100%;">
+                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like"></i>
+                        <i class="fa-solid fa-share-nodes" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="share"></i>
+                        <i class="fa-solid fa-comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comment"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="content d-flex flex-column text-center align-items-center" style="width: 400px;">
+                    <div class="contentProfile">
+                        <img src="./nature.jpg" alt="" style="height: 17px; width: 17px; border-radius: 50%;">
+                        <a href="">Profile name</a>
+                    </div>
+                    <img src="./nature.jpg" alt="" style="height: 300px;">
+                    <p>This is a landscape image</p>
+                    <div class="d-flex justify-content-around " style=" width: 100%;">
+                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like"></i>
+                        <i class="fa-solid fa-share-nodes" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="share"></i>
+                        <i class="fa-solid fa-comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comment"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="content d-flex flex-column text-center align-items-center" style="width: 400px;">
+                    <div class="contentProfile">
+                        <img src="./tree.jpg" alt="" style="height: 17px; width: 17px; border-radius: 50%;">
+                        <a href="">Profile name</a>
+                    </div>
+                    <img src="./tree.jpg" alt="" style="height: 300px;">
+                    <p>This is a landscape image</p>
+                    <div class="d-flex justify-content-around " style="height: 20px; width: 100%;">
+                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like"></i>
+                        <i class="fa-solid fa-share-nodes" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="share"></i>
+                        <i class="fa-solid fa-comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comment"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="content d-flex flex-column text-center align-items-center" style="width: 400px;">
+                    <div class="contentProfile">
+                        <img src="./flower.jpg" alt="" style="height: 17px; width: 17px; border-radius: 50%;">
+                        <a href="">Profile name</a>
+                    </div>
+                    <img src="./flower.jpg" alt="" style="height: 300px;">
+                    <p>This is a landscape image</p>
+                    <div class="d-flex justify-content-around " style="height: 20px; width: 100%;">
+                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like"></i>
+                        <i class="fa-solid fa-share-nodes" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="share"></i>
+                        <i class="fa-solid fa-comment" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Comment"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!-- main content end for large devices -->
+    <div class="d-flex justify-content-end">
+         <a href="#top"><Button> <i class="fa-solid fa-arrow-up"></i></Button></a>
+    </div>
+  
+
+
+    <footer class="container-fluid d-flex justify-content-between">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href=""> Contact Us </a>
+        </div>
+        <div class=" d-flex align-items-center  d-block d-lg-none d-xl-none d-l-none d-md-none "
+            style="height: 10vh;">
+            <button>Login</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center " style="height: 10vh;">
+            Copyright© Kawshik
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        const a = document.getElementById("loginPop")
+        const button = document.getElementById("login")
+        const closed = document.getElementById("#close")
+        button.addEventListener("click", () => {
+            a.style.display = "flex"
+            if (c.style.display === "flex") {
+                c.style.display = "none"
+            }
+        })
+        closed.addEventListener("click", () => {
+            a.style.display = "none"
+        })
+
+        const c = document.getElementById("signUpModal")
+        const button2 = document.getElementById("signUp")
+        const closed2 = document.getElementById("#close2")
+        button2.addEventListener("click", () => {
+            c.style.display = "flex"
+            if (a.style.display === "flex") {
+                a.style.display = "none"
+            }
+        })
+        closed2.addEventListener("click", () => {
+            c.style.display = "none"
+        })
+    </script>
+</body>
+
+</html>
