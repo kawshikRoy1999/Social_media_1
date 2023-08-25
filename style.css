@@ -93,12 +93,6 @@ img{
     width: 50px;
     border-radius: 50%;
 }
-
-.main{
-    z-index: -3;
-    padding-top: 60px;
-}
-
 .toolTip{   
     display: none;
     font-size: small;
